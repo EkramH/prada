@@ -1,0 +1,237 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* ------------ variable css ------------ */
+:root{
+    /* Font */
+    --body-font: 'Libre Baskerville', serif;
+
+    /* colors */
+    --white-color: #fff;
+    --text-color: #272727;
+    --body-color: #EEEEEE;
+    --green-color: #0A8200;
+    --blue-color: #002482;
+    --grey-color: #C4C4C4;
+    --black-bg-color: #00071B;
+
+}
+
+/* ------------ Base ------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------------ ------------ */
+/* header start */
+/* ------------ ------------ */
+.header {
+    width: 100%;
+    background-color: var(--white-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+}
+
+.nav__logo{
+    width: 57px;
+    height: 48px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.nav__item a {
+    font-size: 18px;
+    color: var(--text-color);
+    transition: .4s;
+    padding: 4px 10px;
+}
+
+.nav__item a:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 4px;
+}
+
+.nav__search {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    position: relative;
+}
+
+.nav__search-box {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    padding: 15px 40px;
+    width: 100%;
+}
+
+.nav__search-box::placeholder{
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: #848484;
+}
+
+.nav__search-icon {
+    position: absolute;
+    right: 0;
+    padding: 0 14px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav__icons {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.nav__icon {
+    width: 25px;
+    height: 22px;
+}
+
+.nav__profile {
+    display: flex;
+    align-items: center;
+}
+
+.nav__profile img {
+    width: 39px;
+    height: 39px;
+}
+
+.nav__profile span {
+    padding: 0 15px;
+    font-size: 18px;
+    color: #646464;
+}
+
+/* ------------ ------------ */
+/* header end */
+/* ------------ ------------ */
+
+/* ------------ ------------ */
+/* invite start */
+/* ------------ ------------ */
+.invite {
+    width: 100%;
+    background-color: #F9FAFF;
+    height: 50px;
+    position: relative;
+}
+
+.invite__text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.invite__text a {
+    padding: 0 15px;
+}
+
+.invite__close {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+.invite__close img {
+    position: absolute;
+    right: 26px;
+    top: 15px;
+}
+
+/* ------------ ------------ */
+/* invite end */
+/* ------------ ------------ */
+
+
+/* ------------ ------------ */
+/* Banner Start */
+/* ------------ ------------ */
+.banner__container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 53% 47%;
+}
+
+.banner__img {
+    width: 100%;
+    height: 50%;
+}
+
+.banner__info{
+    background-image: url("/asstes/img/banner/banner-bg.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__logo {
+    Width: 533px; 
+    Height: 83px;
+    margin-bottom: 50px;
+}
+
+.banner__text{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #565656;
+    padding: 20px 0;
+}
+
+.banner__btn {
+    font-size: 24px;
+    padding: 9px 32px;
+    border: 2px solid #222222;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.banner__btn:hover {
+    box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+}
