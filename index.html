@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prada</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="asstes/css/style.css">
 </head>
 <body>
@@ -44,22 +47,61 @@
         </section>
 
         <!-- ---------------- Banner Start  ---------------- -->
-        <section class="banner">
-            <div class="banner__container">
-                <img class="banner__img" src="asstes/img/banner/banner.png" alt="">
-                <div class="banner__info">
-                    <img class="banner__logo" src="asstes/img/banner/banner-logo.png" alt="">
-                    <p class="banner__text">Big Fashion Festival</p>
-                    <p class="banner__text">50% - 80% off</p>
-                    <button class="banner__btn">Explore</button>
+        <section class="banner swiper bannerSwiper">
+            <div class="banner__container swiper-wrapper">
+                <div class="banner__wrapper swiper-slide">
+                    <img class="banner__img" src="asstes/img/banner/banner.png" alt="">
+                    <div class="banner__info">
+                        <img class="banner__logo" src="asstes/img/banner/banner-logo.png" alt="">
+                        <p class="banner__text">Big Fashion Festival</p>
+                        <p class="banner__text">50% - 80% off</p>
+                        <button class="banner__btn">Explore</button>
+                    </div>
+                </div>
+
+                <div class="banner__wrapper swiper-slide">
+                    <img class="banner__img" src="asstes/img/banner/banner.png" alt="">
+                    <div class="banner__info">
+                        <img class="banner__logo" src="asstes/img/banner/banner-logo.png" alt="">
+                        <p class="banner__text">Big Fashion Festival</p>
+                        <p class="banner__text">50% - 80% off</p>
+                        <button class="banner__btn">Explore</button>
+                    </div>
+                </div>
+
+                <div class="banner__wrapper swiper-slide">
+                    <img class="banner__img" src="asstes/img/banner/banner.png" alt="">
+                    <div class="banner__info">
+                        <img class="banner__logo" src="asstes/img/banner/banner-logo.png" alt="">
+                        <p class="banner__text">Big Fashion Festival</p>
+                        <p class="banner__text">50% - 80% off</p>
+                        <button class="banner__btn">Explore</button>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </section>
         <!-- ---------------- Banner End  ---------------- -->
-        
-
-        
     </main>
 
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".bannerSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
