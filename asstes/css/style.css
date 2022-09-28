@@ -491,3 +491,83 @@ a {
 /* ------------ ------------ */
 /* Festival end */
 /* ------------ ------------ */
+
+/* ------------ ------------ */
+/* Category start */
+/* ------------ ------------ */
+.category__container {
+    margin: 0 40px;
+}
+
+.category__wraper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.category__div1 {
+    grid-area: 1 / 1 / 3 / 3;
+    position: relative;
+}
+
+.category__div2 {
+    grid-area: 1 / 3 / 2 / 5;
+    position: relative;
+}
+
+.category__div3 {
+    grid-area: 1 / 5 / 2 / 7;
+    position: relative;
+}
+
+.category__div4 {
+    grid-area: 2 / 3 / 3 / 5;
+    position: relative;
+}
+
+.category__div5 {
+    grid-area: 2 / 5 / 3 / 6;
+    position: relative;
+}
+
+.category__div6 {
+    grid-area: 2 / 6 / 3 / 7;
+    position: relative;
+}
+
+.category__info {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    color: var(--white-color);
+}
+
+.category__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 4px;
+}
+
+.category__btn {
+    background: none;
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    transition: 1s;
+}
+
+.category__btn:hover img {
+    transform: translateX(5px);
+}
+
+
+
+/* ------------ ------------ */
+/* Category end */
+/* ------------ ------------ */
