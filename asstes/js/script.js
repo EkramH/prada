@@ -12,10 +12,28 @@ var swiper = new Swiper(".bannerSwiper", {
   },
 });
 
+// Trending swiper
 var trendSwiper = new Swiper(".trendSwiper", {
-  slidesPerView: 4,
+  slidesPerView: 4.25,
   spaceBetween: 40,
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+});
+
+// Deals swiper
+var trendSwiper = new Swiper(".dealsSwiper", {
+  slidesPerView: 3.45,
+  spaceBetween: 70,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
 });
