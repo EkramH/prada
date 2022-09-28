@@ -37,3 +37,17 @@ var trendSwiper = new Swiper(".dealsSwiper", {
     disableOnInteraction: false,
   },
 });
+
+// offers swiper
+// var mySwiper = new Swiper(".offersSwiper", {
+//   spaceBetween: 40,
+//   slidesPerView: 2.2,
+//   centeredSlides: true,
+//   roundLengths: true,
+//   loop: true,
+//   loopAdditionalSlides: 40,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
