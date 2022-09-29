@@ -51,3 +51,17 @@ var trendSwiper = new Swiper(".dealsSwiper", {
 //     prevEl: ".swiper-button-prev",
 //   },
 // });
+
+// Customer swiper
+var swiper = new Swiper(".customerSwiper", {
+  slidesPerView: 2,
+  spaceBetween: 62,
+  slidesPerGroup: 1,
+  centeredSlides: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
