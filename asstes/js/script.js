@@ -1,3 +1,15 @@
+// Header fixed
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("header-fixed", window.scrollY > 0);
+});
+
+// remove Invite
+function removeInvite() {
+  const invite = document.getElementById("invite");
+  invite.remove();
+}
+
 // Banner Slide
 var swiper = new Swiper(".bannerSwiper", {
   spaceBetween: 30,

@@ -80,6 +80,12 @@ a {
     background-color: var(--white-color);
 }
 
+.header-fixed {
+    position: fixed;
+    z-index: 10;
+    transition: .3s;
+}
+
 .nav {
     display: flex;
     align-items: center;
